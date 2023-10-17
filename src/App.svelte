@@ -3,9 +3,9 @@
 </script>
 
 
-  <nav class="menu">
+  <header class="menu">
     <Menu />
-  </nav>
+  </header>
 
 
 <style>
