@@ -1,5 +1,7 @@
 <script>
-  import filminLogo from '/Users/corac/Documents/factoriaf5/p11frontend/projects/p11-project4/src/assets/Logo.svg'
+  import filminLogo from '../assets/Logo.svg'
+  import avatar from '../assets/Avatar.png'
+  import search from '../assets/Search.png'
 </script>
 
 <header>
@@ -16,7 +18,8 @@
     </div>
     <div id=buttons>
         <button id="buttonSub">SUSCRÍBETE</button>
-        <button id="buttonIniciar">INICIAR SESIÓN</button>
+        <img src={avatar} class="avatar" alt="Avatar" />
+        <img src={search} class="search" alt="Buscador web" />
     </div>
 </header>
 
@@ -24,7 +27,7 @@
 <style>
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #menu{
@@ -33,6 +36,7 @@
         justify-content: flex-start;
         margin-top: 33px;
     }
+    
     nav{
         margin-left: 40px;
     }
@@ -47,30 +51,37 @@
     }
 
    #buttons{
-    display: flex;
-    justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
    button{
+        background-color: #01FFA7;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: .875rem;
         font-weight: 900;
+        color: #060613;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        margin: 20px;
-        padding: 10px;
+        padding: 0.75rem;  
+        height: 2rem;
+        min-width: 2rem;
+        margin-right: 1rem;
+       }
+
+   .avatar{
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
     }
 
-    #buttonSub{
-        background-color: #01FFA7;
-        color: #060613;
-        
+    .search{
+        cursor: pointer;
+        width: auto;
+        height: 1.5rem;
+        margin-left: 1rem;
     }
 
-    #buttonIniciar{
-        background-color: transparent;
-        border: white 2px solid;
-        color: white;
-        
-    }
 </style>
