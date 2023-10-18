@@ -28,26 +28,36 @@
     header{
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
     }
 
     #menu{
         display: flex;
-        align-items: center;
         justify-content: flex-start;
-        margin-top: 33px;
+        align-items: center;
+
     }
-    
+
+    img{
+        height: 1.5rem;
+    }
+
     nav{
         margin-left: 40px;
     }
 
     a{
-        margin-right: 40px;
-        text-decoration: none;
         color: white;
-        size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-right: 1rem;
+        margin-left: 1rem;       
+    }
+
+    a:hover{
+        color: #01FFA7;
     }
 
    #buttons{
@@ -58,18 +68,20 @@
 
    button{
         background-color: #01FFA7;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: .875rem;
-        font-weight: 900;
+        font-weight: bold;
         color: #060613;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        padding: 0.75rem;  
         height: 2rem;
         min-width: 2rem;
         margin-right: 1rem;
-       }
+    }
+
+    button:hover{
+        background-color: #5CFABF;
+    }
 
    .avatar{
         cursor: pointer;
