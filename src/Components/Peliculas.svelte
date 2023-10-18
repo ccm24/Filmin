@@ -22,7 +22,7 @@
 </script>
 
 <div>
-  {#each movies as {title, poster_path}}
+  {#each movies as {poster_path}}
     <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
     <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
     <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
