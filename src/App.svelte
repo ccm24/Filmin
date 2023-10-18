@@ -1,15 +1,8 @@
 <script>
-  import Menu from './Components/Menu.svelte';
-  import Peliculas from './Components/Peliculas.svelte';
+  import Menu from "./Components/Menu.svelte";
+  import Peliculas from "./Components/Peliculas.svelte";
 </script>
 
+<Menu />
+<Peliculas />
 
-  <header class="menu">
-    <Menu />
-  </header>
-
-  <Peliculas />
-
-<style>
-
-</style>
