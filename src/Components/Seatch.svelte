@@ -1,5 +1,5 @@
 <script>
-    import search from '../assets/Search.png'
+    import search from '../assets/Header/Search.png'
 </script>
 
 <img src={search} alt="Buscador web" />

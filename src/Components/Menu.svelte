@@ -64,6 +64,7 @@
         height: 2rem;
         min-width: 2rem;
         margin-right: 1rem;
+        padding: 0rem 0.5rem;
     }
 
     button:hover{

@@ -1,5 +1,5 @@
 <script>
-    import Logo from '../assets/Logo.svg'
+    import Logo from '../assets/Header/Logo.svg'
 </script>
 
 <img src={Logo} class="logo" alt="Logo de Filmin" />

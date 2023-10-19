@@ -1,36 +1,47 @@
 <script>
-    import Insta from '../assets/Insta.png'
-    import Linkedin from '../assets/Linkedin.png'
-    import Pinterest from '../assets/Pinterest.png'
-    import Twitter from '../assets/Twitter.png'
+    import Redes from './Redes.svelte';
+    import Sponsors from './Sponsors.svelte';
+
     
+
 </script>
 
-<footer>
-<hr/>
-<p>Centro de Ayuda</p>
-<p>Contacto</p>
-<p>Canjear código</p>
-<p>Regala Filmin</p>
-<p>Aviso Legal</p>
-<p>Prensa</p>
-<aside>
-    <a href="/"><img src={Insta} class="logo" alt="Logo de Instagram" /></a>
-    <a href="/"><img src={Linkedin} class="logo" alt="Logo de Instagram" /></a>
-    <a href="/"><img src={Pinterest} class="logo" alt="Logo de Instagram" /></a>
-    <a href="/"><img src={Twitter} class="logo" alt="Logo de Instagram" /></a>
 
-</aside>
-<hr>    
+<footer>
+    <hr/>
+    <div>
+        <p>Centro de Ayuda</p>
+        <p>Contacto</p>
+        <p>Canjear código</p>
+        <p>Regala Filmin</p>
+        <p>Aviso Legal</p>
+        <p>Prensa</p>   
+        <Redes />
+    </div>
+    <hr>   
+    <Sponsors />
 </footer>
 
 <style>
     footer{
-        color: #93959C;
+        margin-top: 4rem;
     }
 
-    img{
-        height: 3rem;
-        width: 3rem;
+    hr{
+        border: #93959C solid 0.05rem;
+        margin-top: 1rem;
     }
+
+    div{
+        display: flex;
+        align-items: center;
+        color: #93959C;
+        cursor: pointer;
+        gap: 1rem;
+        margin: 1rem 4rem;
+    }
+
+    p:hover{
+        color: #D1DBE3;
+    }  
 </style>

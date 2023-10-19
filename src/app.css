@@ -3,6 +3,11 @@
   src: url('/src/fonts/Graphik_Font/GraphikBold.ttf');
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
 body{
   background-color: #060613;
   font-family:'Graphik';

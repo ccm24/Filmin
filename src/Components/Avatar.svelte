@@ -1,5 +1,5 @@
 <script>
-      import avatar from '../assets/Avatar.png'
+      import avatar from '../assets/Header/Avatar.png'
 </script>
 
 <img src={avatar} alt="Avatar" />
