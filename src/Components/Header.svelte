@@ -24,10 +24,14 @@
 
 <style>
     header{
+        background-color: #060613;
         display: flex;
         justify-content:flex-start;
         align-items: center;
-        margin: 1rem 4rem;
+        position: sticky;
+        top: 0rem;
+        padding: 1rem;
+        margin: 1rem 0;
     }
 
     nav{

@@ -1,10 +1,12 @@
 <script>
-  import Menu from "./Components/Menu.svelte";
-  import Peliculas from "./Components/Peliculas.svelte";
+  import Header from "./Components/Header.svelte";
   import Footer from "./Components/Footer.svelte";
+  import Listas from "./Components/Listas.svelte";
 </script>
 
-<Menu />
-<Peliculas />
+<Header />
+<Listas />
 <Footer />
+
+
 

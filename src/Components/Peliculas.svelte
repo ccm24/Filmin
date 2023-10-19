@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
 
-  const url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=es-ES&page=1&sort_by=popularity.desc'
+  export let url; 
   const options = {
     method: 'GET',
     headers: {
@@ -24,8 +24,6 @@
 <div>
   {#each movies as {poster_path}}
     <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
-    <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
-    <img alt="Cover image" src={`https://image.tmdb.org/t/p/original/${poster_path}`} />
   {/each}
 </div>
 
@@ -34,12 +32,14 @@
   div{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 0rem 4rem;
   }
 
   img{
     width: 221.333px;
     height: 332px;
-    margin-top: 2rem;
+    margin: 2rem 1rem;
   }
 </style>
