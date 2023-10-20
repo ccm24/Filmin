@@ -29,6 +29,7 @@
         justify-content:flex-start;
         align-items: center;
         position: sticky;
+        z-index: 1;
         top: 0rem;
         padding: 1rem;
         margin: 1rem 0;
