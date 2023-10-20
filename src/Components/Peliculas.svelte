@@ -24,15 +24,13 @@
   
   const rotateLeft = e => {
         const transitioningImage = movies[movies.length -1]
-        //document.getElementById(transitioningImage.id).style.opacity = 0;
         movies = [movies[movies.length -1],...movies.slice(0, movies.length -1)]
-        //setTimeout[() => [document.getElementById(transitioningImage.id).style.opacity =1], speed];
+        
     }
     const rotateRight = e => {
         const transitioningImage = movies[0]
-        //document.getElementById(transitioningImage.id).style.opacity= 0;
         movies = [...movies.slice(1, movies.length), movies[0]]
-        //setTimeout[() => [document.getElementBy(IdtransitioningImage.id).style.opacity = 1], speed];  
+      
     }
 </script>
 
@@ -58,8 +56,10 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
     margin: 0rem 4rem;
+    padding-left: 15rem;
+    max-width: 90%;
   }
 
   div::-webkit-scrollbar{
@@ -82,6 +82,7 @@
         border: none;
         width: 1rem;
         margin-top: 10rem;
+        
     }
 
     #left{

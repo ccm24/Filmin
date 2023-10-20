@@ -10,6 +10,5 @@
         font-size: 1.5rem;
         margin: 3rem 4rem;
         margin-bottom: 0rem;
-
     }
 </style>

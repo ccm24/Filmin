@@ -17,7 +17,6 @@
 
 <Carousel {images} />
 
-
 <Listas />
 <Footer />
 
